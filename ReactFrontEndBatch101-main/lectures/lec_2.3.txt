@@ -1,0 +1,6 @@
+React.JS
+
+open source JS library used for fron end applications
+
+React has components --> basic building blocks of any react application
+React application is made up of reusable components

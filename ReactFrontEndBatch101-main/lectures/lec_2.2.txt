@@ -1,0 +1,91 @@
+//var,let and const
+//var a = 10;
+//let b = 20;
+
+//constant -- once you assign a value you won't change
+//as soon as you declare you should give value
+//const c;
+const c = 30;
+c = 50;
+
+console.log(c);
+
+//var a; //undefined
+
+var a =10;
+a = 20;
+a = "Rajesh";
+
+console.log(a);
+
+
+
+//let b; //undefined
+//redeclaration of let type is not possible but reassignment is possible
+let e1 =10;
+e1 = 20;
+e1 = "Rajesh";
+
+console.log(e1);
+
+
+var i = 50;
+let w1 = 35;
+
+function test(){
+  var j = 100;
+  console.log(i);
+  console.log(j);
+  
+  console.log(w1);
+}
+
+//console.log(j); var is function scope
+console.log(w1);
+
+test()
+
+//var vs let scope
+//var are function scope
+//let and const are block scope
+
+var i = 50;
+let w2 = 35;
+
+function test(){
+  var j = 100;
+  let r = 78;
+  
+  console.log(i);
+  console.log(j);
+  console.log(r);
+  console.log(w2);
+}
+
+//console.log(j); var is function scope
+console.log(w2);
+console.log(r); //not available
+
+test()
+
+function test(){
+  let p1 = 25;
+  var t = 20;
+  
+  console.log(p1);
+  console.log(t);
+  
+  {
+    let n1 = 55;
+    var m = 50;
+    
+    console.log(n1);
+  	console.log(m);
+  }
+  
+  console.log(m);
+  console.log(n1);
+  console.log(m);
+}
+
+test()
