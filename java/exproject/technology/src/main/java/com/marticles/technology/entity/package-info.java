@@ -1,0 +1,1 @@
+package com.marticles.technology.entity;

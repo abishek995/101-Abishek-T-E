@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Check/Uncheck Radio Button</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".check-male").click(function(){
+        $("#male").prop("checked", true);
+    });
+    $(".check-female").click(function(){
+        $("#female").prop("checked", true);
+    });
+});
+</script>
+</head>
+<body>
+    <label><input type="radio" name="gender" id="male"> Male</label>
+    <label><input type="radio" name="gender" id="female"> Female</label>
+    <button type="button" class="check-male">I'm Male</button>
+    <button type="button" class="check-female">I'm Female</button>  
+</body>
+</html>

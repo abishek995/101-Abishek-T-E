@@ -1,0 +1,17 @@
+header{
+    background-color: silver;
+    height: 100px;
+    width: auto;
+
+}
+    
+    
+    
+.box2 p{
+    background-color: rgb(240, 233, 233);
+    /* float: right;
+    float: top; */
+    margin: 10px;
+    padding: 100px;
+    border: rgb(241, 234, 234);
+}

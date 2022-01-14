@@ -1,0 +1,59 @@
+<html>
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  </head>
+<body>
+<button id="btnGenerateTable">Generate Table</button>
+<br />
+<div id="parentHolder"></div>
+
+<script>
+$(document).ready(function(){
+ var Employee = [];
+ Employee.push(["Employee Id", " Employee Name", " Employee salary"]);
+ Employee.push(["1", "Mein Kampf ", "55000"]);
+ Employee.push(["2", "Relativity: The Special and the General Theory", "6666"]);
+ Employee.push(["3", "Think and Grow Rich", "6666"]);
+ Employee.push(["4", "The Art of Public Speaking", "5800"]);
+ Employee.push(["5", "Tales of Secret Egypt", "60600"]);
+ Employee.push(["6", "The Fakir", "6000"]);
+ 
+
+$("#btnGenerateTable").on('click', function (e) {
+    e.preventDefault();
+    var parentDiv = $("#parentHolder");
+    parentDiv.html("");
+    var aTable = $("<table>", {
+        "id": "newTable"
+    }).appendTo(parentDiv);
+    var rowCount =  Employee.length;
+    var colmCount =  Employee[0].length;
+
+    // For loop for adding header .i.e th to our table
+    for (var k = 0; k < 1; k++) {
+        var fragTrow = $("<tr>", {
+            "class": "trClass"
+        }).appendTo(aTable);
+        for (var j = 0; j < colmCount; j++) {
+            $("<th>", {
+                "class": "thClass"
+            }).prependTo(fragTrow).html( Employee[k][j]);
+        }
+    }
+
+    //For loop for adding data .i.e td with data to our dynamic generated table
+    for (var i = 1; i < rowCount; i < i++) {
+        var fragTrow = $("<tr>", {
+            "class": "trClass"
+        }).appendTo(aTable);
+        for (var j = 0; j < colmCount; j++) {
+            $("<td>", {
+                "class": "tdClass"
+            }).appendTo(fragTrow).html( Employee[i][j]);
+        }
+    }
+});
+});
+</script>
+                        

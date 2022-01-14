@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("r1").after();
+  });
+  $("button").click(function(){
+    $("r2").before("<p>Hello world!</p>");
+  });
+});
+</script>
+</head>
+<body>
+
+
+<button id="b1">after</button>
+<div id="r1">
+<p>diplay radio </p>
+<input type='radio' id='ro1' name='type' value='1' />
+<input type='radio' id='ro1' name='type' value='1' />
+</div>
+<button id="b2">before</button>
+<div id="r1">
+    <p>diplay radio </p>
+    <input type='radio' id='ro2' name='type' value='1' />
+    <input type='radio' id='ro2' name='type' value='1' />
+    </div>
+</body>
+</html>

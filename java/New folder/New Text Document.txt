@@ -1,0 +1,33 @@
+entity
+public List<CustomerEntity> findCustomerByName(String name) {
+		
+		
+		return customerRepository.findCustomerByCustomerName(name);
+		// TODO Auto-generated method stub
+	 
+	}
+
+	public List<CustomerEntity> findCustomerByNameLike(String name) {
+		return customerRepository.findCustomerByCustomerNameContaining(name);
+	 
+		 
+	}
+
+	public List<CustomerEntity> findCustomerByNameAndCustomerId(String name, String custId) {
+		
+		 return customerRepository.findCustomerByCustomerNameContainingAndCustomerCode(name,custId);
+	}
+service
+public interface CustomerRepository extends JpaRepository<CustomerEntity, Long>
+{
+	
+	CustomerEntity findCustomerById(long id);
+
+	List<CustomerEntity> findCustomerByCustomerName(String name);
+
+	List<CustomerEntity> findCustomerByCustomerNameContaining(String name);
+
+	List<CustomerEntity> findCustomerByCustomerNameContainingAndCustomerCode(String name, String custId);
+ 
+}
+repo

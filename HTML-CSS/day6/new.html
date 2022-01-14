@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#b1").click(function(){
+    var text=$('#b1').text();
+  });
+  $("#b2").click(function(){
+    var html=$('#b2').text();
+  });
+  $("#b3").click(function(){
+    var val=$('#b3').text();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Name: <input type="text" name="user"></p>
+<button id="b1">name</button>
+<p>html <input type="text"  name="user"></p>
+<button id="b2">html</button>
+<p>css <input type="text"  name="user"></p>
+<button id="b3">text</button>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <img src="axis.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js" defer></script>
+  <link href="styles.css" rel="stylesheet">
+  <title>Tabs</title>
+</head>
+<body><center>
+  <ul class="tabs">
+    <li data-tab-target="#home" class="active tab">Login ID</li>
+    <li data-tab-target="#pricing" class="tab">Debit Card No</li>
+    <li data-tab-target="#about" class="tab">Mpin</li></center>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" data-tab-content class="active"><center>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" ><br><br>
+        <input type="submit" value="Submit">
+        <p><a href="">First time user?register</a>    <a href="">Forget Password</a>  <a href="">Enable Login Id</a></p></center>
+    </div>
+    <div id="pricing" data-tab-content><center>
+        <label for="fname">Card no</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="lname">PIN NO</label><br>
+        <input type="text" id="lname" name="lname" ><br><br>
+        <input type="submit" value="Submit">
+        <p><a href="">First time user?register</a>    <a href="">Forget Password</a>  <a href="">Enable Login Id</a></p></center>
+    </div>
+
+    <div id="about" data-tab-content><center>
+      <p>select an oppction</p>
+        <input type="radio" name="gender" value="male"> customer ID
+<input type="radio" name="gender" value="female"> Register Mobile Number
+
+        <label for="fname">Customer Id</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="lname">MPIN</label><br>
+        <input type="text" id="lname" name="lname" ><br><br>
+        <input type="submit" value="Submit">
+        <p><a href="">First time user?register</a>    <a href="">Forget Password</a>  <a href="">Enable Login Id</a></p></center>
+    </div>
+  </div>
+</body>
+</html>
